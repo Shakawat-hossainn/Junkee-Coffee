@@ -1,0 +1,164 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Calligraffitti&display=swap');
+body{
+    background-image: url(images/bodyBcg.jpeg) ;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+
+.offcanvas-start {
+    transform: translateX(-100%);
+}
+.navbar-toggler{
+    border: none;
+    outline: none;
+}
+.offcanvas{
+    background-color: #f09d51;
+    color: black;
+    width: 10vw;
+    box-sizing: border-box;
+}
+.offcanvas, .offcanvas-lg, .offcanvas-md, .offcanvas-sm, .offcanvas-xl, .offcanvas-xxl {
+    --bs-offcanvas-zindex: 1045;
+    --bs-offcanvas-width: 226px;
+    --bs-offcanvas-height: 30vh;
+    --bs-offcanvas-padding-x: 1rem;
+    --bs-offcanvas-padding-y: 1rem;
+    --bs-offcanvas-color: var(--bs-body-color);
+    --bs-offcanvas-bg: var(--bs-body-bg);
+    --bs-offcanvas-border-width: var(--bs-border-width);
+    --bs-offcanvas-border-color: var(--bs-border-color-translucent);
+    --bs-offcanvas-box-shadow: var(--bs-box-shadow-sm);
+    --bs-offcanvas-transition: transform 0.3s ease-in-out;
+    --bs-offcanvas-title-line-height: 1.5;
+}
+.social-icons{
+    list-style: none;
+    display: flex;
+    gap: 0.5rem;
+}
+.social-icons li{
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 2px;
+   
+}
+.banner-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure it takes full height of the viewport */
+}
+
+.banner {
+    font-family: "Calligraffitti", cursive;
+    font-weight: 900;
+    font-style: normal;
+    color: #f09d51;
+    margin-bottom: 20px; /* Add some spacing between the banner and social icons */
+}
+.video-item {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-item video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+.on-off {
+    position: absolute;
+    padding: 1px;
+    border-radius: 28%;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    bottom: 20px;
+    left: 90%;
+    width: 4rem;
+    background-color: #f09d51;
+   
+}
+.switch-cont{
+    position: relative;
+}
+
+ 
+.switch-btn {
+    z-index: 1;
+    border: 1px solid black;
+    height: 27px;
+    position: absolute;
+    width: 31px;
+    top: 0;
+    left: 0px;
+    background-color: black;
+    border-radius: 30%;
+}
+.banner h1{
+    font-weight: bolder;
+    font-size: 100px;
+}
+.preloader{
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f09d51;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media  screen and (max-width:480px) {
+    .on-off {
+        left: 80%;
+
+    }
+    .banner h1{
+        text-align: center
+    }
+
+    
+}
